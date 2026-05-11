@@ -1,16 +1,27 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+#CALCULATOR USING FUNCTIONS:
+def calculator(a,b,n):
+    if n==1:
+        return a+b
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    elif n==2:
+        return a-b
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+    elif n==4:
+        return a/b
+
+
+    elif n==3:
+        return a*b
+
+    else:
+        return "Invalid choice"
+
+
+print("1:ADDITION,2:SUBTRACTION , 3:MULTIPLY, 4:DIVISION")
+n= int(input(""))
+val1=int(input("enter value 1: "))
+val2=int(input("enter value 2: "))
+final=calculator(val1,val2,n)
+print(f"Result:{final}")
